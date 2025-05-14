@@ -1,0 +1,435 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar Wasake | Bubbles Rain</title>
+
+    <!-- Favicon (example) -->
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/295/295128.png"
+      type="image/png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Bubbles Container (animated background) -->
+    <div id="bubbles-container"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#hero" class="nav-logo">Tushar Wasake</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <!-- Opens resume in new tab and downloads it -->
+          <a
+            id="downloadResumeLink"
+            href="resume/Tushar-Wasake-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Tushar-Wasake-Resume.pdf"
+          >
+            Download Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <img
+          src="images/profile-pic.png"
+          alt="Tushar's Photo"
+          class="profile-pic"
+        />
+        <h1 class="hero-title">
+          Hello, I'm <span class="highlight">Tushar Wasake</span>
+        </h1>
+        <p class="hero-subtitle">Backend Developer</p>
+        <p class="hero-text">
+          Passionate about building scalable server-side solutions with Node.js,
+          Express, and MongoDB. Excited to tackle challenges and collaborate in
+          dynamic teams!
+        </p>
+
+        <!-- Another button to download resume -->
+        <a
+          class="btn"
+          href="resume/Tushar-Wasake-Resume.pdf"
+          download="Tushar-Wasake-Resume.pdf"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a driven backend developer specialized in JavaScript, Node.js,
+          Express.js, and MongoDB. Adept at creating RESTful APIs, managing data
+          in MySQL, and using Git/GitHub for version control. Committed to
+          crafting scalable solutions and solving complex problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Tech Stack &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Express</div>
+          <div class="skill-card">MongoDB</div>
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">Git &amp; GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Project Card 1: Money Media -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Money Media</h3>
+            <div class="project-badges">
+              <span class="badge live-badge">Live</span>
+              <span class="badge code-badge">Code</span>
+            </div>
+          </div>
+          <p class="project-description">
+            A year-go-to platform for insights on personal finance, investing,
+            and business strategies. We aim to simplify complex financial
+            topics.
+          </p>
+
+          <div class="project-details">
+            <div class="details-section">
+              <h4>Features:</h4>
+              <ul class="features-list">
+                <li>Service Management</li>
+                <li>Multi-forms Portfolio System</li>
+                <li>Advanced Rule-Based Filtering</li>
+                <li>Testimonials</li>
+                <li>Blog Integration</li>
+                <li>Newsletter Tracking</li>
+              </ul>
+            </div>
+
+            <div class="details-section">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Mongoose</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">NextJS</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Responsibilities:</h4>
+              <ul class="responsibilities-list">
+                <li>Designed RESTful API architecture</li>
+                <li>Implemented secure authentication with JWT</li>
+                <li>Created MongoDB schema & models</li>
+                <li>Built advanced service content</li>
+                <li>Integrated email notifications</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/Tusharwasake/MoneyMediia2"
+              target="_blank"
+              class="btn btn-github"
+            >
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://moneymediia1.netlify.app/"
+              target="_blank"
+              class="btn btn-demo"
+            >
+              <i class="fa fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Retail Canvas E-Commerce -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Retail Canvas E-Commerce</h3>
+            <div class="project-badges">
+              <span class="badge live-badge">Live</span>
+              <span class="badge code-badge">Code</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Developed a comprehensive e-commerce platform enabling users to
+            browse products, manage orders, track shipments, and make secure
+            online payments.
+          </p>
+
+          <div class="project-details">
+            <div class="details-section">
+              <h4>Features:</h4>
+              <ul class="features-list">
+                <li>Login, Sign-Up</li>
+                <li>User Authentication (JWT, Bcrypt)</li>
+                <li>Role-based access control</li>
+                <li>Product filtering</li>
+                <li>Cart Management</li>
+                <li>Order Processing</li>
+                <li>Payment Gateway Integration</li>
+              </ul>
+            </div>
+
+            <div class="details-section">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Mongoose</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">React</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Responsibilities:</h4>
+              <ul class="responsibilities-list">
+                <li>Developed full-stack application</li>
+                <li>Implemented user authentication</li>
+                <li>Created robust product & cart management system</li>
+                <li>Integrated secure payment gateway</li>
+                <li>Designed user profiles</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/ravithejagolla/Shop-Smart-E-Commerce"
+              target="_blank"
+              class="btn btn-github"
+            >
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://shop-smart-e-commerce-app-3.netlify.app/"
+              target="_blank"
+              class="btn btn-demo"
+            >
+              <i class="fa fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Travel Budget Planning Tool -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Travel Budget Planning Tool</h3>
+            <div class="project-badges">
+              <span class="badge live-badge">Live</span>
+              <span class="badge code-badge">Code</span>
+            </div>
+          </div>
+          <p class="project-description">
+            A smart budgeting tool to help travelers manage expenses, set
+            spending goals, and track their financial limits efficiently.
+          </p>
+
+          <div class="project-details">
+            <div class="details-section">
+              <h4>Features:</h4>
+              <ul class="features-list">
+                <li>Expense tracking</li>
+                <li>Custom categories</li>
+                <li>Budget calculator</li>
+                <li>Currency converter</li>
+                <li>Spending insights</li>
+                <li>Data visualization</li>
+              </ul>
+            </div>
+
+            <div class="details-section">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">ChartJS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Responsibilities:</h4>
+              <ul class="responsibilities-list">
+                <li>Developed front-end UI with React</li>
+                <li>Implemented state management with Redux</li>
+                <li>Created responsive, mobile-first design</li>
+                <li>Designed MongoDB schema</li>
+                <li>Built RESTful APIs</li>
+                <li>Implemented secure API routes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/Tusharwasake/TravelBudgetTool"
+              target="_blank"
+              class="btn btn-github"
+            >
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://travel-budget-tool.netlify.app/"
+              target="_blank"
+              class="btn btn-demo"
+            >
+              <i class="fa fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 4: Algorithmic Trading Strategy Development -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Algorithmic Trading Strategy Development</h3>
+            <div class="project-badges">
+              <span class="badge live-badge">Live</span>
+              <span class="badge code-badge">Code</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Automated stock & options trading system using real-time market data
+            analysis for profitable trading decisions.
+          </p>
+
+          <div class="project-details">
+            <div class="details-section">
+              <h4>Features:</h4>
+              <ul class="features-list">
+                <li>Rule-Based Filtering</li>
+                <li>Automated Trade Execution (Triggers)</li>
+                <li>AWS Lambda & Fargate API</li>
+                <li>Cron Job Scheduling</li>
+                <li>Real-Time Alerts</li>
+                <li>Telegram Notifications</li>
+                <li>Monitoring Dashboard (Grafana)</li>
+              </ul>
+            </div>
+
+            <div class="details-section">
+              <h4>Tech Stack:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">Flask API</span>
+                <span class="tech-tag">Telegram API</span>
+                <span class="tech-tag">Cron</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Responsibilities:</h4>
+              <ul class="responsibilities-list">
+                <li>Developed rule-based trade filtering</li>
+                <li>Implemented API for execution automation</li>
+                <li>Integrated real-time alert system via Telegram</li>
+                <li>Deployed & scheduled cron jobs</li>
+                <li>Built monitoring dashboard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/Tusharwasake/STBT-Strategy"
+              target="_blank"
+              class="btn btn-github"
+            >
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://stbt-strategy-mvzax9ngowfekd47vngdb8.streamlit.app/"
+              target="_blank"
+              class="btn btn-demo"
+            >
+              <i class="fa fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +91 8830126724</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:tusharwasake@gmail.com">tusharwasake@gmail.com</a>
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/tusharwasake/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/TusharWasake/" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Tushar Wasake. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html> -->
