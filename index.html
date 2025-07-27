@@ -45,7 +45,7 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="https://cdn-icons-png.flaticon.com/512/295/295128.png"
+      href="images/profile-pic.png"
       type="image/png"
     />
 
@@ -1031,7 +1031,7 @@
                 >
                   <input type="hidden" name="form-name" value="contact" />
 
-                  <div>
+                  <div class="contact-form-group">
                     <label
                       for="contact-name"
                       class="block theme-text text-sm font-medium mb-2"
@@ -1043,13 +1043,13 @@
                       name="name"
                       type="text"
                       placeholder="Your Full Name"
-                      class="w-full px-4 py-3 rounded-lg theme-secondary-bg border theme-border theme-text placeholder-gray-400 focus:border-[#607afb] focus:ring-2 focus:ring-[#607afb]/20 transition-all"
+                      class="contact-input"
                       required
                     />
                     <span class="error-message" id="name-error"></span>
                   </div>
 
-                  <div>
+                  <div class="contact-form-group">
                     <label
                       for="contact-email"
                       class="block theme-text text-sm font-medium mb-2"
@@ -1061,13 +1061,13 @@
                       name="email"
                       type="email"
                       placeholder="your.email@domain.com"
-                      class="w-full px-4 py-3 rounded-lg theme-secondary-bg border theme-border theme-text placeholder-gray-400 focus:border-[#607afb] focus:ring-2 focus:ring-[#607afb]/20 transition-all"
+                      class="contact-input"
                       required
                     />
                     <span class="error-message" id="email-error"></span>
                   </div>
 
-                  <div>
+                  <div class="contact-form-group">
                     <label
                       for="contact-subject"
                       class="block theme-text text-sm font-medium mb-2"
@@ -1079,11 +1079,11 @@
                       name="subject"
                       type="text"
                       placeholder="Project Discussion"
-                      class="w-full px-4 py-3 rounded-lg theme-secondary-bg border theme-border theme-text placeholder-gray-400 focus:border-[#607afb] focus:ring-2 focus:ring-[#607afb]/20 transition-all"
+                      class="contact-input"
                     />
                   </div>
 
-                  <div>
+                  <div class="contact-form-group">
                     <label
                       for="contact-message"
                       class="block theme-text text-sm font-medium mb-2"
@@ -1095,7 +1095,7 @@
                       name="message"
                       placeholder="Tell me about your project or just say hello!"
                       rows="5"
-                      class="w-full px-4 py-3 rounded-lg theme-secondary-bg border theme-border theme-text placeholder-gray-400 focus:border-[#607afb] focus:ring-2 focus:ring-[#607afb]/20 transition-all resize-none"
+                      class="contact-input"
                       required
                     ></textarea>
                     <span class="error-message" id="message-error"></span>
