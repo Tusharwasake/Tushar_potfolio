@@ -328,48 +328,51 @@ class ContactFormManager {
 
     const originalText = this.showLoadingState();
     const formData = new FormData(this.contactForm.form);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject') || 'Contact Form Message';
-    const message = formData.get('message');
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const subject = formData.get("subject") || "Contact Form Message";
+    const message = formData.get("message");
 
     try {
       // Method 1: Try Netlify Forms (if deployed on Netlify)
-      if (window.location.hostname.includes('netlify')) {
+      if (window.location.hostname.includes("netlify")) {
         try {
-          const netlifyResponse = await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString()
+          const netlifyResponse = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
           });
-          
+
           if (netlifyResponse.ok) {
             this.showSuccessMessage();
             this.contactForm.form.reset();
             return;
           }
         } catch (netlifyError) {
-          console.log('Netlify Forms not available, trying other methods...');
+          console.log("Netlify Forms not available, trying other methods...");
         }
       }
 
       // Method 2: Try FormSubmit
       try {
-        const formSubmitResponse = await fetch('https://formsubmit.co/ajax/tusharwasake@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            subject: subject,
-            message: message,
-            _captcha: false,
-            _template: 'table'
-          })
-        });
+        const formSubmitResponse = await fetch(
+          "https://formsubmit.co/ajax/tusharwasake@gmail.com",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              subject: subject,
+              message: message,
+              _captcha: false,
+              _template: "table",
+            }),
+          }
+        );
 
         if (formSubmitResponse.ok) {
           const result = await formSubmitResponse.json();
@@ -380,7 +383,7 @@ class ContactFormManager {
           }
         }
       } catch (formSubmitError) {
-        console.log('FormSubmit failed, using mailto fallback...');
+        console.log("FormSubmit failed, using mailto fallback...");
       }
 
       // Method 3: Fallback to mailto (always works)
@@ -397,14 +400,15 @@ Email: ${email}
 Sent from your portfolio contact form
       `.trim();
 
-      const mailtoLink = `mailto:tusharwasake@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
-      
+      const mailtoLink = `mailto:tusharwasake@gmail.com?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(mailtoBody)}`;
+
       window.location.href = mailtoLink;
       this.showMailtoMessage();
       this.contactForm.form.reset();
-
     } catch (error) {
-      console.error('All submission methods failed:', error);
+      console.error("All submission methods failed:", error);
       this.showErrorMessage();
     } finally {
       this.resetButtonState(originalText);
@@ -412,7 +416,9 @@ Sent from your portfolio contact form
   }
 
   setupEventListeners() {
-    this.contactForm.form?.addEventListener("submit", (e) => this.handleFormSubmission(e));
+    this.contactForm.form?.addEventListener("submit", (e) =>
+      this.handleFormSubmission(e)
+    );
   }
 }
 
@@ -442,6 +448,6 @@ class PortfolioApp {
 }
 
 // Initialize the application when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   new PortfolioApp();
 });
