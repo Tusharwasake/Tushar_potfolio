@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar Wasake | Bubbles Rain</title>
+
+    <!-- Favicon (example) -->
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/295/295128.png"
+      type="image/png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Bubbles Container (animated background) -->
+    <div id="bubbles-container"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#hero" class="nav-logo">Tushar Wasake</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <!-- Opens resume in new tab and downloads it -->
+          <a
+            id="downloadResumeLink"
+            href="resume/Tushar-Wasake-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Tushar-Wasake-Resume.pdf"
+          >
+            Download Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <img
+          src="images/profile-pic.png"
+          alt="Tushar's Photo"
+          class="profile-pic"
+        />
+        <h1 class="hero-title">
+          Hello, I'm <span class="highlight">Tushar Wasake</span>
+        </h1>
+        <p class="hero-subtitle">Backend Developer</p>
+        <p class="hero-text">
+          Passionate about building scalable server-side solutions with Node.js,
+          Express, and MongoDB. Excited to tackle challenges and collaborate in
+          dynamic teams!
+        </p>
+
+        <!-- Another button to download resume -->
+        <a
+          class="btn"
+          href="resume/Tushar-Wasake-Resume.pdf"
+          download="Tushar-Wasake-Resume.pdf"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a driven backend developer specialized in JavaScript, Node.js,
+          Express.js, and MongoDB. Adept at creating RESTful APIs, managing data
+          in MySQL, and using Git/GitHub for version control. Committed to
+          crafting scalable solutions and solving complex problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Tech Stack &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Express</div>
+          <div class="skill-card">MongoDB</div>
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">Git &amp; GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <h3>Event Connection Platform</h3>
+          <p>
+            A real-time event management platform enabling users to create,
+            manage, and participate in events with real-time communication.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, Socket.io
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/Tusharwasake/2447_Event_Connection_Platform"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://silver-piroshki-ab1de7.netlify.app/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <h3>Travel Budget Planning Tool</h3>
+          <p>
+            A smart budgeting tool to help travelers manage expenses, set
+            spending goals, and track their financial limits efficiently.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/Tusharwasake/TravelBudgetTool"
+              target="_blank"
+              >GitHub</a
+            >
+            <a href="https://travel-budget-tool.netlify.app/" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +91 8830126724</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:tusharwasake@gmail.com">tusharwasake@gmail.com</a>
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/tusharwasake/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/TusharWasake/" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Tushar Wasake. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
